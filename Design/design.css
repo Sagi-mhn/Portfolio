@@ -1,0 +1,245 @@
+/*selecteur {
+        propriete: valeur;
+}
+.bienvenue {
+    color:red;
+}
+
+a[title="Accueil"] {
+    color: red
+}*/
+
+* { box-sizing: border-box;}
+
+html {  /*mettre body plus tard*/
+  background-color: rgb(174, 213, 213);
+}
+/* body {background-color:rgb(174, 213, 213); } */
+
+.header {
+  text-align: center;
+  background-color: rgb(174, 213, 213);
+  padding-bottom: 20px;
+}
+
+nav {
+  font-size: 1.1em;
+  box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  text-align: center;
+  font-size: x-large;
+  background-image: url(https://www.shutterstock.com/image-photo/old-woodwood-white-texturelight-wooden-260nw-609907466.jpg);
+}
+
+section {
+    /* background-color: rgb(174, 213, 213); */
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+h1 {
+    text-align: right;
+    padding: 25px;
+}
+
+.separator {
+  width: 40px;
+  height: 1px;
+  margin: 15px, auto;
+  display: block;
+  background: #999999;
+}
+
+.contener {
+  width: 80%;
+  margin: auto;
+  /* flex-direction:column ;
+  align-items: center; */
+  
+  }
+h2 {
+  font-family: "HelloValentina", serif;
+  font-size: xx-large;
+  text-align: right;
+  text-decoration: underline;
+  padding-bottom: 15px;
+  margin: 25px;
+
+  /*border-bottom: 1px black solid;*/
+}
+
+h3 {
+  text-decoration: underline;
+  border: 1px black solid;
+  border-radius: 8px;
+  /*box-shadow: 1px 1px 1px black ;
+    text-shadow: 1px 1px 2px gold*/
+  font-size: 250%;
+  clear: both;
+}
+/*h3:active {color: red;} quand on clique dessus*/
+
+#logo {
+  margin-top: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+
+ul {
+  padding: 0;
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin: 25px;
+}
+/* a[title="Contact" ] {display: block;} */
+
+li:hover {
+ /*quand la souris passe dessus*/
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+  h4:before {
+    content :"\«";
+    color : grey;
+  }
+
+  h4 {
+    text-decoration: underline;
+  }
+  
+  h4:after {
+    content :" \»";
+    color : grey;
+
+  }
+
+  #projects {
+    display: flex; /*Pour les mettre à la suite*/
+    flex-wrap:wrap ; 
+    justify-content: space-between;
+  }
+
+  .projet {
+    width: 400px;
+    margin: 30px;
+    display: inline-block;
+    background-color: white ;
+    padding-bottom: 15px;
+    border: 0px black; /*créer un contour null*/
+    border-radius: 10px; /*arrondir les contours*/
+    overflow: hidden ; /*cacher surplus pour aligner les contours au bloc (aux img)*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    /*ombre sur les contours null*/
+
+  }
+
+  /*quand on passe la souris dessus*/
+  .projet:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.3s;
+
+  }
+
+  .picture {
+    width: 400px;
+    height: 266px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+
+  .projet img {
+    min-width: 400px;
+    height: 266px;
+
+
+  }
+
+  
+  .projet span {
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .projet .date_project {
+    font-size: 0.7em;
+       
+  }
+
+
+  #contact {
+    position: relative;
+    padding: 30px;
+    margin-bottom: 50px;
+    background-color: rgb(174, 213, 213);
+  }
+
+p {
+  font-family: arial, "Times New Roman", serif;
+  color: black;
+  text-align: justify;
+  text-align: center;
+  background-color: rgb(174, 213, 213);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  color: black;
+}
+/*a:visited{color:darkorchid} déjà cliqué sur le lien*/
+
+
+
+/* h6 {text-decoration: underline; } */
+
+
+footer {
+  font-weight: bold;
+  text-align: center;
+  /* background-color: rgb(174, 213, 213); */
+  padding: 15px;
+}
+
+
+
+/*POLICES PERSO*/
+@font-face {
+  font-family: "HelloValentina";
+  src: url(../src/HelloValentina.ttf) format("truetype");
+}
+
+/* utiliser une police personalisé :
+    ->telecherger sur un site (dafont) */
+
+
+.picture_project img, .picture_project video {
+  width: 90%;
+}
+
+h5 {
+  text-decoration: underline;
+  height: 100%;
+  font-size: 150%;
+  clear: both;
+}
+
+@media all and (max-width: 1000px) {
+    body { background: red;}
+    /* meta { name="viewport" content="width=device-width";} */
+    .projet { width: 100%; margin: 15px auto;}
+    .projet img {width: 100%; min-width: auto; height: auto};
+    .projet .picture {width: 100%; height: auto;}
+    header hé { width: 90%;}
+
+
+};
