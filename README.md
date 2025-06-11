@@ -1,4 +1,4 @@
-#Ceci est mon portfolio réalisé en HTML/CSS/JS.
+# Ceci est mon portfolio réalisé en HTML/CSS/JS.
 
 En tant qu'étudiant à EPITECH, j'ai principalement réalisé des projets scolaires :
 - Talent'Nest
