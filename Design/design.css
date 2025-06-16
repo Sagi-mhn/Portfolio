@@ -1,9 +1,6 @@
 /*selecteur {
         propriete: valeur;
 }
-.bienvenue {
-    color:red;
-}
 
 a[title="Accueil"] {
     color: red
@@ -185,7 +182,7 @@ p {
   color: black;
   text-align: justify;
   text-align: center;
-  background-color: rgb(174, 213, 213);
+  /* background-color: rgb(174, 213, 213); */
 }
 
 
