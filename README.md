@@ -4,12 +4,13 @@ En tant qu'étudiant à EPITECH, j'ai principalement réalisé des projets scola
 - Talent'Nest
 - Dragon'Nest
 - Chat'Nest
+- Blueno (Projet de fin de troisième année)
 
 J'ai réalisé un premier projet personnel : une application de Todo-list développée avec vue.js.
 
 D'autres projets sont à venir cette année !
 
-Toutes remarques ou suggestions concernant mon portfolio est la bienvenue.
+Toutes remarques ou suggestions concernant mon portfolio est le bienvenue.
 
 je précise que ce projet était initialement réalisé dans le cadre d'un cours pour m'exercer en HTML/CSS/JS, ce qui explique les commentaires présents dans le code ainsi que le manque d'encapsulations. 
 
