@@ -6,37 +6,104 @@ a[title="Accueil"] {
     color: red
 }*/
 
-* { box-sizing: border-box;}
+* { box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
 
 html {  /*mettre body plus tard*/
-  background-color: rgb(174, 213, 213);
-}
+  background-color: #eef6f6;}
 /* body {background-color:rgb(174, 213, 213); } */
+body {
+  font-family: Arial, "Times New Roman", serif;
+  color: #222;
+  line-height: 1.6;
+}
 
 .header {
   text-align: center;
-  background-color: rgb(174, 213, 213);
-  padding-bottom: 20px;
+  background: linear-gradient(135deg, #aed5d5, #dff1f1);
+  padding: 40px 20px;
 }
 
+  .header img:first-child {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+h3 {
+  margin-top: 15px;
+  padding: 10px 20px;
+  display: inline-block;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/*h3:active {color: red;} quand on clique dessus*/
+
 nav {
+  background-color: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
   font-size: 1.1em;
-  box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
-  padding: 15px;
-  text-align: center;
-  font-size: x-large;
-  background-image: url(https://www.shutterstock.com/image-photo/old-woodwood-white-texturelight-wooden-260nw-609907466.jpg);
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #4fa3a3;
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+li:hover {
+ /*quand la souris passe dessus*/
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contener {
+  width: 80%;
+  margin: 60px auto;
 }
 
 section {
-    /* background-color: rgb(174, 213, 213); */
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-h1 {
-    text-align: right;
-    padding: 25px;
+  background-color: #ffffff;
+  padding: 40px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
 }
 
 .separator {
@@ -47,34 +114,16 @@ h1 {
   background: #999999;
 }
 
-.contener {
-  width: 80%;
-  margin: auto;
-  /* flex-direction:column ;
-  align-items: center; */
-  
-  }
+
+
 h2 {
   font-family: "HelloValentina", serif;
   font-size: xx-large;
   text-align: right;
-  text-decoration: underline;
   padding-bottom: 15px;
   margin: 25px;
 
-  /*border-bottom: 1px black solid;*/
 }
-
-h3 {
-  text-decoration: underline;
-  border: 1px black solid;
-  border-radius: 8px;
-  /*box-shadow: 1px 1px 1px black ;
-    text-shadow: 1px 1px 2px gold*/
-  font-size: 250%;
-  clear: both;
-}
-/*h3:active {color: red;} quand on clique dessus*/
 
 #logo {
   margin-top: 20px;
@@ -83,39 +132,38 @@ h3 {
 }
 
 
-ul {
-  padding: 0;
-  display: inline;
-}
-
-li {
-  list-style-type: none;
-  display: inline;
-  margin: 25px;
-}
 /* a[title="Contact" ] {display: block;} */
 
-li:hover {
- /*quand la souris passe dessus*/
-  font-size: 20px;
-  font-weight: bold;
+
+
+h4 {
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  position: relative;
 }
 
+h4::before,
+h4::after {
+  content: "'";
+  color: #000000;
+}
 
-  h4:before {
-    content :"\«";
-    color : grey;
-  }
+p {
+  font-size: 1.05em;
+  text-align: center;
+}
 
-  h4 {
-    text-decoration: underline;
-  }
-  
-  h4:after {
-    content :" \»";
-    color : grey;
+p span {
+  background-color: transparent;
+}
 
-  }
+.quisuisje img {
+  width: 180px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
 
   #projects {
     display: flex; /*Pour les mettre à la suite*/
@@ -123,24 +171,18 @@ li:hover {
     justify-content: space-between;
   }
 
-  .projet {
-    width: 400px;
-    margin: 30px;
-    display: inline-block;
-    background-color: white ;
-    padding-bottom: 15px;
-    border: 0px black; /*créer un contour null*/
-    border-radius: 10px; /*arrondir les contours*/
-    overflow: hidden ; /*cacher surplus pour aligner les contours au bloc (aux img)*/
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    /*ombre sur les contours null*/
-
-  }
+.projet {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
   /*quand on passe la souris dessus*/
   .projet:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transition: 0.3s;
+      transform: translateY(-5px);
 
   }
 
@@ -157,7 +199,6 @@ li:hover {
 
 
   }
-
   
   .projet span {
     text-transform: uppercase;
@@ -174,16 +215,10 @@ li:hover {
     position: relative;
     padding: 30px;
     margin-bottom: 50px;
-    background-color: rgb(174, 213, 213);
+    display: inline;
   }
 
-p {
-  font-family: arial, "Times New Roman", serif;
-  color: black;
-  text-align: justify;
-  text-align: center;
-  /* background-color: rgb(174, 213, 213); */
-}
+
 
 
 a {
@@ -201,11 +236,13 @@ a:focus {
 
 
 footer {
-  font-weight: bold;
   text-align: center;
-  /* background-color: rgb(174, 213, 213); */
-  padding: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
 }
+
 
 
 
@@ -230,13 +267,24 @@ h5 {
   clear: both;
 }
 
+.blueno_leprojet {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 25px;
+}
+
 @media all and (max-width: 1000px) {
-    body { background: red;}
-    /* meta { name="viewport" content="width=device-width";} */
-    .projet { width: 100%; margin: 15px auto;}
-    .projet img {width: 100%; min-width: auto; height: auto};
-    .projet .picture {width: 100%; height: auto;}
-    header hé { width: 90%;}
+  .contener {
+    width: 95%;
+  }
 
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-};
+  section {
+    padding: 25px;
+  }
+}
