@@ -5,6 +5,7 @@ En tant qu'étudiant à EPITECH, j'ai principalement réalisé des projets scola
 - Dragon'Nest
 - Chat'Nest
 - Blueno (Projet de fin de troisième année)
+- Hackaton 2025 (ETALAB)
 
 J'ai réalisé un premier projet personnel : une application de Todo-list développée avec vue.js.
 
