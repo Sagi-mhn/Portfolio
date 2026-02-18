@@ -32,6 +32,49 @@ body {
   margin-bottom: 15px;
 }
 
+.weather-card {
+  background-color: #2a2b33;
+  color: #fff;
+  width: 260px;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.weather-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.weather-icon {
+  width: 70px;
+  height: 110px;
+}
+
+.temperature {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.weather-menu {
+  font-size: 60px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.weather-menu:hover {
+  opacity: 1;
+}
+
 h1 {
     text-align: center;
     padding: 10px;
